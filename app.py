@@ -5,6 +5,7 @@ import sys
 import traceback
 from datetime import datetime
 from http import HTTPStatus
+import os
 
 from aiohttp import web
 from aiohttp.web import Request, Response, json_response
@@ -69,6 +70,6 @@ APP.router.add_post("/api/messages", messages)
 
 if __name__ == "__main__":
     try:
-        web.run_app(APP, host="ust-python.azurewebsites.net", port=CONFIG.PORT)
+        web.run_app(APP, host="localhost", port=CONFIG.PORT)
     except Exception as error:
         raise error

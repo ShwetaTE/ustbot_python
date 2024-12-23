@@ -3,6 +3,7 @@
 # Licensed under the MIT License.
 
 import os
+import sys
 
 """ Bot Configuration """
 
@@ -10,10 +11,8 @@ import os
 class DefaultConfig:
     """ Bot Configuration """
 
-    PORT = 3978
-    # APP_ID = os.environ.get("MicrosoftAppId", "")
-    # APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "")
-    # TENANT_ID= os.environ.get("MicrosoftAppTenantId", "")
+    # PORT = 3978
     APP_ID = os.environ.get("MicrosoftAppId", "6353b651-5476-45c1-96d4-9e05e7ac150a")
     APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "EiI8Q~3GMsAQlhBbBZT4DTS1y4gJ4iwsrYJIWaS~")
-    TENANT_ID= os.environ.get("MicrosoftAppTenantId", "3d7a3f90-1d2c-4d91-9b49-52e098cf9eb8")
+    APP_TYPE = os.environ.get("MicrosoftAppType", "SingleTenant")
+    APP_TENANTID = os.environ.get("MicrosoftAppTenantId", "3d7a3f90-1d2c-4d91-9b49-52e098cf9eb8")
